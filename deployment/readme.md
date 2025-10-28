@@ -21,3 +21,6 @@ A ReplicaSet in Kubernetes is a controller that ensures a specified number of id
 ```
 kubectl create deployment "Name_OF_Deployment" --image="Image name"
 ```
+
+## Note
+While we can create ReplicaSets directly, in most common scenarios, ReplicaSets are managed implicitly by Deployments. A Deployment is a higher-level abstraction that provides ``declarative updates for Pods and ReplicaSets``. When we create a Deployment, it automatically creates and manages ReplicaSets to handle the desired state and updates of our application. This allows for features like rolling updates, rollbacks, and scaling without directly interacting with ReplicaSets.
