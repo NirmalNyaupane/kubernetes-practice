@@ -52,7 +52,7 @@ requests and limits also influence the Quality of Service (QoS) class assigned t
 
 __livenessProbe__
 
-A liveness probe determines if a container is running and healthy. If the liveness probe fails, Kubernetes assumes the container is in an unhealthy state and restarts it. (Just like ecs and other serive if /health endpoint is fails then new deplyment would be discarded). Used for auto healing purpose
+A liveness probe determines if a container is running and healthy. If the liveness probe fails, Kubernetes assumes the container is in an unhealthy state and restarts it.
 
 ```
 livenessProbe:
